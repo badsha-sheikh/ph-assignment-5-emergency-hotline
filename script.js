@@ -26,8 +26,8 @@ function getName(){
 }
 getName()
 //card 1
-let nationalCallButton = getCallButton("call-button-national");
-nationalCallButton.addEventListener("click",function(){
+getCallButton("call-button-national")
+.addEventListener("click",function(){
     console.log("clikced")
      const serviceName = document.getElementById("service-name-national").innerText;
  const serviceNumber = document.getElementById("service-number-national").innerText;
