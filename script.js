@@ -26,8 +26,8 @@ function getName(){
 }
 getName()
 //card 1
-getCallButton("call-button-national")
-.addEventListener("click",function(){
+let nationalCallButton = getCallButton("call-button-national");
+nationalCallButton.addEventListener("click",function(){
     console.log("clikced")
      const serviceName = document.getElementById("service-name-national").innerText;
  const serviceNumber = document.getElementById("service-number-national").innerText;
@@ -49,8 +49,8 @@ document.getElementById("available-coin").innerText = availableCoin;
 
 
 //card 2
-let policeCallButton = getCallButton("call-button-police")
-.addEventListener("click",function(){
+ getCallButton("call-button-police")
+ .addEventListener("click",function(){
     console.log("clikced")
      const serviceName = document.getElementById("service-name-police").innerText;
  const serviceNumber = document.getElementById("service-number-police").innerText;
@@ -185,6 +185,9 @@ document.getElementById("available-coin").innerText = availableCoin;
 }
 })
 
+
+//Call History 
+let callHistory = document.getElementById("call-history")
 
 
 
