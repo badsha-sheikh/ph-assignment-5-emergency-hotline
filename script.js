@@ -32,7 +32,8 @@ let callHistory = [];
 //card 1
 getCallButton("call-button-national")
 .addEventListener("click",function(){
-    console.log("clikced")
+  
+    
      const serviceName = document.getElementById("service-name-national").innerText;
  const serviceNumber = document.getElementById("service-number-national").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -52,7 +53,8 @@ const data = {
  }
 
 callHistory.push(data)
-console.log(callHistory);
+
+
 let addedCallHistory = document.getElementById("added-call-history");
 
     const div = document.createElement("div");
@@ -78,7 +80,8 @@ let addedCallHistory = document.getElementById("added-call-history");
 //card 2
  getCallButton("call-button-police")
  .addEventListener("click",function(){
-    console.log("clikced")
+    
+    
      const serviceName = document.getElementById("service-name-police").innerText;
  const serviceNumber = document.getElementById("service-number-police").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -97,7 +100,8 @@ const data = {
     date: new Date().toLocaleTimeString()
  }
  callHistory.push(data)
- console.log(callHistory);
+ 
+ 
 
  let addedCallHistory = document.getElementById("added-call-history");
 
@@ -120,7 +124,8 @@ const data = {
 //card 3
 getCallButton("call-button-fire")
 .addEventListener("click",function(){
-    console.log("clikced")
+   
+    
      const serviceName = document.getElementById("service-name-fire").innerText;
  const serviceNumber = document.getElementById("service-number-fire").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -139,7 +144,8 @@ const data = {
     date: new Date().toLocaleTimeString()
  }
  callHistory.push(data)
- console.log(callHistory);
+
+ 
  let addedCallHistory = document.getElementById("added-call-history");
 
     const div = document.createElement("div");
@@ -161,7 +167,8 @@ const data = {
 //card 4
  getCallButton("call-button-ambulance")
 .addEventListener("click",function(){
-    console.log("clikced")
+  
+    
      const serviceName = document.getElementById("service-name-ambulance").innerText;
  const serviceNumber = document.getElementById("service-number-ambulance").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -180,7 +187,8 @@ const data = {
     date: new Date().toLocaleTimeString()
  }
  callHistory.push(data)
- console.log(callHistory);
+ 
+ 
  let addedCallHistory = document.getElementById("added-call-history");
 
     const div = document.createElement("div");
@@ -202,7 +210,8 @@ const data = {
 //card 5
  getCallButton("call-button-women-child")
 .addEventListener("click",function(){
-    console.log("clikced")
+  
+    
      const serviceName = document.getElementById("service-name-women-child").innerText;
  const serviceNumber = document.getElementById("service-number-women-child").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -221,7 +230,8 @@ const data = {
     date: new Date().toLocaleTimeString()
  }
  callHistory.push(data)
- console.log(callHistory);
+ 
+ 
  let addedCallHistory = document.getElementById("added-call-history");
 
     const div = document.createElement("div");
@@ -243,7 +253,8 @@ const data = {
 //card 6
  getCallButton("call-button-corruption")
 .addEventListener("click",function(){
-    console.log("clikced")
+    
+    
      const serviceName = document.getElementById("service-name-corruption").innerText;
  const serviceNumber = document.getElementById("service-number-corruption").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -262,7 +273,8 @@ const data = {
     date: new Date().toLocaleTimeString()
  }
  callHistory.push(data)
- console.log(callHistory);
+
+ 
  let addedCallHistory = document.getElementById("added-call-history");
 
     const div = document.createElement("div");
@@ -284,7 +296,8 @@ const data = {
 //card 7
  getCallButton("call-button-electricity")
 .addEventListener("click",function(){
-    console.log("clikced")
+   
+    
      const serviceName = document.getElementById("service-name-electricity").innerText;
  const serviceNumber = document.getElementById("service-number-electricity").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -303,7 +316,8 @@ const data = {
     date: new Date().toLocaleTimeString()
  }
  callHistory.push(data)
- console.log(callHistory);
+ 
+ 
  let addedCallHistory = document.getElementById("added-call-history");
 
     const div = document.createElement("div");
@@ -325,7 +339,8 @@ const data = {
 //card 8
 getCallButton("call-button-brac")
 .addEventListener("click",function(){
-    console.log("clikced")
+    
+    
      const serviceName = document.getElementById("service-name-brac").innerText;
  const serviceNumber = document.getElementById("service-number-brac").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -344,7 +359,7 @@ const data = {
     date: new Date().toLocaleTimeString()
  }
  callHistory.push(data)
- console.log(callHistory);
+ 
  let addedCallHistory = document.getElementById("added-call-history");
 
     const div = document.createElement("div");
@@ -366,7 +381,6 @@ const data = {
 //card 9
  getCallButton("call-button-railway")
 .addEventListener("click",function(){
-    console.log("clikced")
      const serviceName = document.getElementById("service-name-railway").innerText;
  const serviceNumber = document.getElementById("service-number-railway").innerText;
  const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
@@ -385,7 +399,8 @@ const data = {
     date: new Date().toLocaleTimeString()
  }
  callHistory.push(data)
- console.log(callHistory);
+ 
+ 
  let addedCallHistory = document.getElementById("added-call-history");
 
     const div = document.createElement("div");
@@ -405,68 +420,27 @@ const data = {
 
 })
 
+//clear History 
+const clearButton = document.getElementById("clear-button");
+clearButton.addEventListener("click", function(){
+    document.getElementById("added-call-history").innerHTML = "";
+});
+//Challenge part copy item
+const copyButtons = document.getElementsByClassName("copy");
+let copyCount = document.getElementById("copy-count");
+  let count = 0;
 
-//Call History 
-// let callHistory = document.getElementById("call-history")
-// console.log(callHistory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function getServiceName () {
-//  let serviceNames = document.getElementsByClassName("service-name");
-//     for (const name of serviceNames){
-//         console.log(name.innerText)
-//     }
-// }
-
-// const callButtons = document.getElementsByClassName("call");
-
-// for(const callButton of callButtons){
-//     callButton.addEventListener("click",function(){
-   
-//     let serviceNumbers = document.getElementsByClassName("service-number");
-//     for(const number of serviceNumbers){
-//         console.log(number.innerText)
-//     }
-//     // const serviceName = document.getElementById("service-name").innerText;
-//     // const serviceNumber = document.getElementById("service-number").innerText;
-//     // const alertMessage = ["Calling" + " " + serviceName +  " " + serviceNumber ];
-//     let availableCoin = parseInt(document.getElementById("available-coin").innerText);
-   
-//     // if( availableCoin >= 20){
-//     //     alert("alertMessage");
-//     //     availableCoin = availableCoin - 20;
-//     //     document.getElementById("available-coin").innerText = availableCoin;
-//     // }else {
-//     //     alert ("Not enough coins to make a call!")
-//     // }
-
+for (let i=0; i<copyButtons.length ; i++){
+   let button = copyButtons[i]
+   button.addEventListener("click", function(){
+      let card = button.parentNode.parentNode; 
+            let numberOfCard = card.querySelector(".service-number");
+            let number = numberOfCard .innerText;
+            navigator.clipboard.writeText(number);
+          
+            count = count + 1;
+            copyCount.innerText = count;
+            alert("Copied Number is" +" :" +" "+ number)
     
-//     })
-// }
+   })
+}
