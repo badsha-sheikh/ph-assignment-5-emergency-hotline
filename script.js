@@ -25,6 +25,10 @@ function getName(){
     }
 }
 getName()
+let callHistory = [];
+
+
+
 //card 1
 getCallButton("call-button-national")
 .addEventListener("click",function(){
@@ -41,11 +45,34 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+
+callHistory.push(data)
+console.log(callHistory);
+let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 
  
-
-
 
 
 //card 2
@@ -64,6 +91,31 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+ callHistory.push(data)
+ console.log(callHistory);
+
+ let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 //card 3
 getCallButton("call-button-fire")
@@ -81,6 +133,30 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+ callHistory.push(data)
+ console.log(callHistory);
+ let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 //card 4
  getCallButton("call-button-ambulance")
@@ -98,6 +174,30 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+ callHistory.push(data)
+ console.log(callHistory);
+ let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 //card 5
  getCallButton("call-button-women-child")
@@ -115,6 +215,30 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+ callHistory.push(data)
+ console.log(callHistory);
+ let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 //card 6
  getCallButton("call-button-corruption")
@@ -132,6 +256,30 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+ callHistory.push(data)
+ console.log(callHistory);
+ let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 //card 7
  getCallButton("call-button-electricity")
@@ -149,6 +297,30 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+ callHistory.push(data)
+ console.log(callHistory);
+ let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 //card 8
 getCallButton("call-button-brac")
@@ -166,6 +338,30 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+ callHistory.push(data)
+ console.log(callHistory);
+ let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 //card 9
  getCallButton("call-button-railway")
@@ -183,12 +379,36 @@ document.getElementById("available-coin").innerText = availableCoin;
  }else {
      alert ("Not enough coins to make a call!")
 }
+const data = {
+    name: serviceName,
+    number : serviceNumber,
+    date: new Date().toLocaleTimeString()
+ }
+ callHistory.push(data)
+ console.log(callHistory);
+ let addedCallHistory = document.getElementById("added-call-history");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="rounded-lg bg-[#FAFAFA] flex items-center justify-between p-2 mt-3" id="added-call-history">
+            <div>
+                <h1 class="font-bold">${data.name}</h1>
+                <p class="text-gray-400 font-semibold">${data.number}</p>
+            </div>
+            <div>
+                <h1 class="font-semibold">${data.date}</h1>
+            </div>
+        </div>
+    `
+    
+    addedCallHistory.appendChild(div);
+
 })
 
 
 //Call History 
-let callHistory = document.getElementById("call-history")
-
+// let callHistory = document.getElementById("call-history")
+// console.log(callHistory)
 
 
 
